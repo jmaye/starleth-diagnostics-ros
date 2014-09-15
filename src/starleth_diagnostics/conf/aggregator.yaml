@@ -1,0 +1,41 @@
+pub_rate: 1.0
+base_path: ''
+analyzers:
+  sensors:
+    type: diagnostic_aggregator/AnalyzerGroup
+    path: Sensors
+    analyzers:
+      velodyne:
+        type: diagnostic_aggregator/GenericAnalyzer
+        path: Velodyne HDL
+        find_and_remove_prefix: 'velodyne:'
+  system:
+    type: diagnostic_aggregator/AnalyzerGroup
+    path: System
+    analyzers:
+      starleth_hlpc:
+        type: diagnostic_aggregator/AnalyzerGroup
+        path: starleth_hlpc
+        analyzers:
+          cpu:
+            type: diagnostic_aggregator/GenericAnalyzer
+            path: CPU
+            expected: ['CPU Usage (starleth_hlpc)',
+                       'CPU Temperature (starleth_hlpc)']
+          mem:
+            type: diagnostic_aggregator/GenericAnalyzer
+            path: Memory
+            expected: ['Memory Usage (starleth_hlpc)']
+          hdd:
+            type: diagnostic_aggregator/GenericAnalyzer
+            path: HDD
+            expected: ['HDD Usage (starleth_hlpc)']
+          ntp:
+            type: diagnostic_aggregator/GenericAnalyzer
+            path: NTP
+            timeout: 15
+            contains: ['NTP offset from starleth_hlpc to']
+          net:
+            type: diagnostic_aggregator/GenericAnalyzer
+            path: Network
+            expected: ['Network Usage (starleth_hlpc)']
