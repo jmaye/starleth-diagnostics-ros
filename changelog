@@ -1,3 +1,9 @@
+starleth-diagnostics-ros (0.1-6) trusty; urgency=low
+
+  * bug in the aggregator 
+
+ -- Jerome Maye <jerome.maye@mavt.ethz.ch>  Thu, 18 Sep 2014 15:05:28 +0200
+
 starleth-diagnostics-ros (0.1-5) trusty; urgency=low
 
   * adding teamlio 

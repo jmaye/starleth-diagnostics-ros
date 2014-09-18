@@ -34,7 +34,7 @@ analyzers:
             type: diagnostic_aggregator/GenericAnalyzer
             path: NTP
             timeout: 15
-            contains: ['NTP offset from starleth_hlpc to']
+            contains: ['NTP offset from starleth-hlpc to']
           net:
             type: diagnostic_aggregator/GenericAnalyzer
             path: Network
@@ -60,7 +60,7 @@ analyzers:
             type: diagnostic_aggregator/GenericAnalyzer
             path: NTP
             timeout: 15
-            contains: ['NTP offset from teamlio_HP_EliteBook_8530w to']
+            contains: ['NTP offset from teamlio-HP-EliteBook-8530w to']
           net:
             type: diagnostic_aggregator/GenericAnalyzer
             path: Network
