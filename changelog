@@ -1,3 +1,9 @@
+starleth-diagnostics-ros (0.1-7) trusty; urgency=low
+
+  * unknown bug 
+
+ -- Jerome Maye <jerome.maye@mavt.ethz.ch>  Thu, 18 Sep 2014 15:11:06 +0200
+
 starleth-diagnostics-ros (0.1-6) trusty; urgency=low
 
   * bug in the aggregator 
