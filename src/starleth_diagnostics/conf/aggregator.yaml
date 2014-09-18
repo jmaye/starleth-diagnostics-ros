@@ -39,3 +39,29 @@ analyzers:
             type: diagnostic_aggregator/GenericAnalyzer
             path: Network
             expected: ['Network Usage (starleth_hlpc)']
+      teamlio_HP_EliteBook_8530w:
+        type: diagnostic_aggregator/AnalyzerGroup
+        path: teamlio_HP_EliteBook_8530w
+        analyzers:
+          cpu:
+            type: diagnostic_aggregator/GenericAnalyzer
+            path: CPU
+            expected: ['CPU Usage (teamlio_HP_EliteBook_8530w)',
+                       'CPU Temperature (teamlio_HP_EliteBook_8530w)']
+          mem:
+            type: diagnostic_aggregator/GenericAnalyzer
+            path: Memory
+            expected: ['Memory Usage (teamlio_HP_EliteBook_8530w)']
+          hdd:
+            type: diagnostic_aggregator/GenericAnalyzer
+            path: HDD
+            expected: ['HDD Usage (teamlio_HP_EliteBook_8530w)']
+          ntp:
+            type: diagnostic_aggregator/GenericAnalyzer
+            path: NTP
+            timeout: 15
+            contains: ['NTP offset from teamlio_HP_EliteBook_8530w to']
+          net:
+            type: diagnostic_aggregator/GenericAnalyzer
+            path: Network
+            expected: ['Network Usage (teamlio_HP_EliteBook_8530w)']
