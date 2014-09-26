@@ -9,6 +9,13 @@ analyzers:
         type: diagnostic_aggregator/GenericAnalyzer
         path: Velodyne HDL
         find_and_remove_prefix: 'velodyne:'
+    type: diagnostic_aggregator/AnalyzerGroup
+    path: Sensors
+    analyzers:
+      xsensmt:
+        type: diagnostic_aggregator/GenericAnalyzer
+        path: Xsens Mti
+        find_and_remove_prefix: 'xsensmt:'
   system:
     type: diagnostic_aggregator/AnalyzerGroup
     path: System
