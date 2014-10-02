@@ -13,6 +13,10 @@ analyzers:
         type: diagnostic_aggregator/GenericAnalyzer
         path: Xsens MTi
         find_and_remove_prefix: 'xsensmt:'
+      visensor:
+        type: diagnostic_aggregator/GenericAnalyzer
+        path: VI-sensor
+        find_and_remove_prefix: 'visensor:'
   system:
     type: diagnostic_aggregator/AnalyzerGroup
     path: System
