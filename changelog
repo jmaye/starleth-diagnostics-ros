@@ -1,3 +1,9 @@
+starleth-diagnostics-ros (0.1-14) trusty; urgency=medium
+
+  * adding joystick 
+
+ -- Jerome Maye <jerome.maye@mavt.ethz.ch>  Tue, 14 Oct 2014 14:13:57 +0200
+
 starleth-diagnostics-ros (0.1-13) trusty; urgency=medium
 
   * adding new computers 
