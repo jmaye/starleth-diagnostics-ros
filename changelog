@@ -1,3 +1,9 @@
+starleth-diagnostics-ros (0.1-13) trusty; urgency=medium
+
+  * adding new computers 
+
+ -- Jerome Maye <jerome.maye@mavt.ethz.ch>  Tue, 14 Oct 2014 13:20:41 +0200
+
 starleth-diagnostics-ros (0.1-12) trusty; urgency=medium
 
   * adding vi-sensor 

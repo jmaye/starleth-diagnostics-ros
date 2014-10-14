@@ -47,29 +47,55 @@ analyzers:
             type: diagnostic_aggregator/GenericAnalyzer
             path: Network
             expected: ['Network Usage (starleth_hlpc)']
-      teamlio_HP_EliteBook_8530w:
+      starleth_llpc:
         type: diagnostic_aggregator/AnalyzerGroup
-        path: teamlio_HP_EliteBook_8530w
+        path: starleth_llpc
         analyzers:
           cpu:
             type: diagnostic_aggregator/GenericAnalyzer
             path: CPU
-            expected: ['CPU Usage (teamlio_HP_EliteBook_8530w)',
-                       'CPU Temperature (teamlio_HP_EliteBook_8530w)']
+            expected: ['CPU Usage (starleth_llpc)',
+                       'CPU Temperature (starleth_llpc)']
           mem:
             type: diagnostic_aggregator/GenericAnalyzer
             path: Memory
-            expected: ['Memory Usage (teamlio_HP_EliteBook_8530w)']
+            expected: ['Memory Usage (starleth_llpc)']
           hdd:
             type: diagnostic_aggregator/GenericAnalyzer
             path: HDD
-            expected: ['HDD Usage (teamlio_HP_EliteBook_8530w)']
+            expected: ['HDD Usage (starleth_llpc)']
           ntp:
             type: diagnostic_aggregator/GenericAnalyzer
             path: NTP
             timeout: 15
-            contains: ['NTP offset from teamlio-HP-EliteBook-8530w to']
+            contains: ['NTP offset from starleth-llpc to']
           net:
             type: diagnostic_aggregator/GenericAnalyzer
             path: Network
-            expected: ['Network Usage (teamlio_HP_EliteBook_8530w)']
+            expected: ['Network Usage (starleth_llpc)']
+      starleth_op:
+        type: diagnostic_aggregator/AnalyzerGroup
+        path: starleth_op
+        analyzers:
+          cpu:
+            type: diagnostic_aggregator/GenericAnalyzer
+            path: CPU
+            expected: ['CPU Usage (starleth_op)',
+                       'CPU Temperature (starleth_op)']
+          mem:
+            type: diagnostic_aggregator/GenericAnalyzer
+            path: Memory
+            expected: ['Memory Usage (starleth_op)']
+          hdd:
+            type: diagnostic_aggregator/GenericAnalyzer
+            path: HDD
+            expected: ['HDD Usage (starleth_op)']
+          ntp:
+            type: diagnostic_aggregator/GenericAnalyzer
+            path: NTP
+            timeout: 15
+            contains: ['NTP offset from starleth-op to']
+          net:
+            type: diagnostic_aggregator/GenericAnalyzer
+            path: Network
+            expected: ['Network Usage (starleth_op)']
